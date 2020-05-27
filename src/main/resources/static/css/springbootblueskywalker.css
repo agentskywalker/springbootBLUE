@@ -65,15 +65,46 @@ p{
     font-size: 1.6em;
     line-height: 1.4em;
     margin: 20px auto;
-    margin-top: 50px;
+    /*margin-bottom: 20px;*/
+    /*margin-top: 60px;*/
     padding: 50px;
     width: 100%;
-    max-width: 1800px;
+    max-width: 7680px;
+    display: inline-block;
 }
 
 .content ul{
     margin: 0.5em 2em;
     padding: 0;
+}
+
+.content2 {
+    background: -webkit-linear-gradient(bottom, #c6ccbe, #eeeeee 175px);
+    background: -moz-linear-gradient(bottom, #c6ccbe, #eeeeee 175px);
+    background: linear-gradient(bottom, #c6ccbe, #eeeeee 175px);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #666666;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    /*margin: 20px auto;*/
+    margin: auto;
+    margin-bottom: 20px;
+    /*margin-top: 60px;*/
+    padding: 50px;
+    width: 100%;
+    max-width: 7680px;
+    display: inline-block;
+    alignment: right;
+}
+
+.child_div_1{
+    float:left;
+    /*margin-right:5px;*/
+}
+.child_div_2{
+    float:right;
+    /*margin-right:5px;*/
 }
 
 form{
@@ -82,11 +113,15 @@ form{
     background: linear-gradient(bottom, #cccccc, #eeeeee 175px);
     margin: auto;
     position: relative;
-    width: 550px;
-    height: 450px;
+    /*width: 550px;
+    height: 450px;*/
+    width: 50%;
+    height: 45%;
+    /*width: auto;*/
+    height: auto;
     font-family: Tahoma, Geneva,sans-serif;
     font-size: 14px;
-    font-style: italic;
+    font-style: normal;
     line-height: 24px;
     font-weight: bold;
     color: #0099CC;
@@ -98,13 +133,19 @@ form{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-tr{
-    color: #112233;
-    font-family: sans-serif;
+th{
+    font-family: Tahoma, Geneva,sans-serif;
     font-size: 14px;
-    font-max-size: 15px;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: bold;
+    color: #0099CC;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
 }
-select{
+
+tr{
     color: #112233;
     font-family: sans-serif;
     font-size: 14px;
@@ -115,8 +156,16 @@ tr:hover{
     background-color: rgba(152, 255, 217, 0.33);
 }
 
+select{
+    color: #112233;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-max-size: 15px;
+}
+
 input{
-    width: 375px;
+    /*width: 375px;*/
+    width: auto;
     display: block;
     border: 1px solid #999;
     height: 25px;
@@ -142,11 +191,35 @@ input.button:hover{
     color: rgba(18, 204, 131, 0.46);
 }
 
+fieldset {
+    overflow: hidden
+}
+
+.float-left-class {
+    float: left;
+    clear: none;
+}
+
+label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+}
+
+input[type=radio],
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 2px 2px 2px;
+}
+
+
 h1{
     color: #111111;
     font-family: 'Pacifico', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 h2{
@@ -187,7 +260,7 @@ h2{
     font-weight: 200;
 }
 #footer ul li{
-    padding: 0.5em;
+    padding: 0.1em;
 }
 
 
@@ -219,8 +292,10 @@ h2{
 
 /*The magic*/
 
-#header{
-    position: fixed;
+.header{
+    /*position: fixed;*/
+    /*position: inherit;*/
+    position: relative;
     top: 0;
     left: 0;
     right: 0;

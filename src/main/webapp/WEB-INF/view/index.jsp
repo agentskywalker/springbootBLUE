@@ -1,8 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%--<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1" %>--%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 <%--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">--%>
-<%--<!DOCTYPE html>--%>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Employee Management Portal</title>
@@ -12,81 +15,113 @@
 
     <%--<link rel="stylesheet" href="/css/springbootbluestyle.css">--%>
     <link rel="stylesheet" href="/css/springbootblueskywalker.css">
+    <%--<link rel="stylesheet" href="/css/calender.scss">--%>
+    <script src="/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <%--include header link here--%>
 
 <body>
 
-<header id="header">
-    <%--<nav    class="links" style="--items: 7; --left: 5; ">--%>
-        <nav    class="links" style="--items: 7;">
-        <a  href="/">Home</a>
-        <a  href="/">Work</a>
-        <a  href="/">Leasure</a>
-        <a  href="/">Linked In</a>
-        <a  href="/">Facebook</a>
-        <a  href="/">About Me</a>
-        <a  href="/">Contact</a>
-        <span   class="line"></span>
-    </nav>
-</header>
-
-<%--<ul id="nav">
-    <li id="nav-1"><a href="http://www.free-css.com/">CSS Templates</a></li>
-    <li id="nav-2"><a href="http://www.free-css.com/">CSS Layouts</a></li>
-    <li id="nav-3"><a href="http://www.free-css.com/">CSS Books</a></li>
-    <li id="nav-4"><a href="http://www.free-css.com/">CSS Menus</a></li>
-    <li id="nav-5"><a href="http://www.free-css.com/">CSS Tutorials</a></li>
-    <li id="nav-6"><a href="http://www.free-css.com/">CSS Reference</a></li>
-    <li id="nav-7"><a rel="nofollow" target="_blank" href="http://www.simplebits.com/" title="SimpleBits">SimpleBits</a></li>
-</ul>--%>
-<br><br><br><br><br><br>
+<%@include file="header.jsp"%>
 
 <div class="content">
+    <div class="child_div_1">
+        <h1>This is H1 content</h1>
 
-<h1>This is H1 content</h1>
+        <h3> Today is <%= java.util.Calendar.getInstance().getTime()%>
+        </h3>
 
-<h3> Today is <%= java.util.Calendar.getInstance().getTime()%></h3>
-
-<h4>We ROCK Here!!</h4>
-
-
-    Let's Rock.
-
-    <ul>
-        <li>Howdy!!</li>
-        <li>Howdy!!</li>
-        <li>Howdy!!</li>
-        <li>Howdy!!</li>
-        <li>Howdy!!</li>
-        <li>Howdy!!</li>
-        <li>Howdy!!</li>
+        <h4>We ROCK Here!!</h4>
 
 
-    </ul>
+        Let's Rock.
+
+        <ul>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
 
 
-<p>
+        </ul>
+    </div>
 
-    This is a paragraph.
+    <div class="child_div_2">
+        This is Div2.
 
-
-
-
-    We write story here.
-</p>
+    </div>
+    <%--<p>
+        This is a paragraph.
+        We write story here.
+    </p>--%>
 
 
 </div>
 
-<div    class="content">
+<div class="content2">
+
+    <div class="child_div_1">
+        <h3> Today is <%= java.util.Calendar.getInstance().getTime()%>
+        </h3>
+
+        <h4>We ROCK Here!!</h4>
+
+
+        Let's Rock.
+
+        <ul>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+
+
+        </ul>
+    </div>
+    <div class="child_div_2">
+        <h3> Today is <%= java.util.Calendar.getInstance().getTime()%>
+        </h3>
+
+        <h4>We ROCK Here!!</h4>
+
+
+        Let's Rock.
+
+        <ul>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+            <li>Howdy!!</li>
+
+
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="content">
     <p>
         This is my 2nd paragraph.
     </p>
 </div>
 
+<%@include file="footer.jsp"%>
+
 </body>
+
 
 
 </html>
