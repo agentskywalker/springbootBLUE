@@ -97,7 +97,7 @@
                 </td>
                 <td>
                     <%--<input type="text" id="dob" name="dob"/>--%>
-                        <input type="text" id="datepicker">
+                        <input type="text" id="datepicker"/>
                 </td>
             </tr>
             <tr>

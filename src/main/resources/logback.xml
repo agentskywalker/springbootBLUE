@@ -26,12 +26,12 @@
         </encoder>
     </appender>
 
-    <logger name="com.agentskywalker.office.employeemanagement" level="debug" additivity="false">
+    <logger name="com.agentskywalker.office.employeemanagement" level="warn" additivity="false">
         <appender-ref ref="dailyRollingFileAppenderSpringbootBLUE"/>
         <appender-ref ref="consoleAppenderSpringbootBLUE"/>
     </logger>
 
-    <root level="debug">
+    <root level="warn">
         <appender-ref ref="dailyRollingFileAppenderSpringbootBLUE"/>
         <appender-ref ref="consoleAppenderSpringbootBLUE"/>
     </root>
